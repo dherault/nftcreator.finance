@@ -1,0 +1,7 @@
+{
+  "extends": "dherault",
+  "parser": "babel-eslint",
+  "rules": {
+    "react/jsx-no-bind": "off"
+  }
+}

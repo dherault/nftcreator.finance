@@ -1,0 +1,49 @@
+{
+  "name": "front",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "start": "react-scripts start",
+    "start:watch": "npm run start",
+    "build": "npm run build:production",
+    "build:production": "react-scripts build",
+    "build:staging": "REACT_APP_STAGGING=\"true\" react-scripts build",
+    "test": "react-scripts test",
+    "lint": "eslint src --quiet",
+    "lint:fix": "npm run lint -- --fix",
+    "deploy:production": "firebase deploy --project default",
+    "deploy:staging": "firebase deploy --project staging",
+    "update-browsers-list": "npx browserslist@latest --update-db"
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  },
+  "dependencies": {
+    "@emotion/react": "^11.7.0",
+    "@emotion/styled": "^11.6.0",
+    "@mui/icons-material": "^5.2.0",
+    "@mui/material": "^5.2.2",
+    "@reduxjs/toolkit": "^1.6.2",
+    "@testing-library/jest-dom": "^5.11.4",
+    "@testing-library/react": "^11.1.0",
+    "@testing-library/user-event": "^12.1.10",
+    "ethers": "^5.5.1",
+    "flexpad": "^3.0.0",
+    "mpxx": "^5.0.0",
+    "react": "^17.0.2",
+    "react-dom": "^17.0.2",
+    "react-redux": "^7.2.6",
+    "react-scripts": "4.0.3",
+    "redux": "^4.1.2",
+    "web-vitals": "^1.0.1"
+  }
+}
